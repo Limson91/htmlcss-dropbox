@@ -3,3 +3,59 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, ol, menu {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    display: inline-block;
+}
+
+header li {
+    display: inline-block;
+    margin-right: 40px;
+    vertical-align: middle;
+}
+
+.nav-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: inline;
+    width: 130px;
+}
+
+.header-button {
+    background-color: #0061FF;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.nav-container {
+    width: 100%;
+}
+
+
+/* debug */
+
+.debug .page-header {
+    /* background-color: aqua; */
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+
+.debug .page-header .col {
+    background-color: white;
+}
