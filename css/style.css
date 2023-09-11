@@ -70,6 +70,53 @@ header li {
     padding-bottom: 40px;
 }
 
+.hero-button {
+    background-color: #0061FF;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.hero__row {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.7em;
+}
+
+.cancel {
+    font-size: 14px;
+}
+
+.fa-arrow-down {
+    margin-top: 80px;
+    font-size: 40px;
+}
+
+.col-4 {
+    flex-basis: calc((100% / 12) * 4)
+}
+
+.col-8 {
+    flex-basis: calc((100% / 12) * 8);
+}
+
+.img-jumbo {
+    width: 680px;
+}
+
+.hero__row li {
+    margin-bottom: 30px;
+}
+
+.hero__row a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
 /* debug */
 
 .debug .page-header {
