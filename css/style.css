@@ -97,7 +97,7 @@ header li {
 }
 
 .col-4 {
-    flex-basis: calc((100% / 12) * 4)
+    flex-basis: calc((100% / 12) * 4);
 }
 
 .col-8 {
@@ -120,14 +120,73 @@ header li {
 /*Business content cards*/
 
 .business-content h2 {
-    padding-top: 100px;
-    padding-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 20px;
     font-size: 40px;
 }
 
 .business-content label {
     padding-right: 50px;
     font-size: 14px;
+}
+
+.business-card .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.business__col-4 {
+    width: 300px;
+}
+
+.business-card .container {
+    margin-top: 50px;
+}
+
+.plan-name {
+    font-size: 14px;
+    text-align: center;
+}
+
+.main-business-info {
+    padding: 20px;
+}
+
+.main-business-info li {
+    margin-bottom: 20px;
+}
+
+.main-business-info ul {
+    margin-top: 30px;
+}
+
+.plan-title {
+    font-size: 20px;
+}
+
+.price {
+    font-size: 12px;
+}
+
+.duration {
+    font-size: 10px;
+    color: gray;
+}
+
+.user-description {
+    font-size: 14px;
+}
+
+.trial-button {
+    background-color: #0061FF;
+    color: white;
+    padding: 10px 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0p;
 }
 
 /* debug */
@@ -150,4 +209,10 @@ header li {
 
 .debug .hero [class^='col'] {
     /* background-color: white; */
+}
+
+.debug .business-card .business__col-4 {
+    /* background-color: bisque; */
+    padding: 20px;
+    border: 2px solid #f6f6f6;
 }
