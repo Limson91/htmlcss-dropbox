@@ -117,6 +117,19 @@ header li {
     font-size: 14px;
 }
 
+/*Business content cards*/
+
+.business-content h2 {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+.business-content label {
+    padding-right: 50px;
+    font-size: 14px;
+}
+
 /* debug */
 
 .debug .page-header {
