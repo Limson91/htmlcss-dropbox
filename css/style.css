@@ -122,19 +122,24 @@ header li {
     width: 120px;
 }
 
+/* setup buttons */
+
 .header-button {
-    background-color: #0061FF;
+    background-color: var(--blue);
     color: white;
-    padding: 5px 15px;
-    text-align: center;
+    display: inline-block;
+    line-height: 44px;
+    font: 18px;
+    padding: 0 16px;
+}
+
+.button.button--sm {
+    line-height: 35px;
+    font-size: 16px;
+    padding: 0px 24px;
 }
 
 /* main-hero */
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
 .hero {
     background-color: var(--light-blue);
@@ -154,56 +159,9 @@ header li {
     gap: 24px; /*prova a vedere se funzia anche per la suddivisione delle card */
 }
 
-.col-12 {
-    flex-basis: 100%;
-}
-
-.hero__title {
-    font-size: 70px;
-    font-weight: 700;
-    padding-top: 100px;
-    padding-bottom: 40px;
-}
-
-.hero-button {
-    background-color: #0061FF;
-    color: white;
-    padding: 10px 15px;
-    text-align: center;
-}
-
-.hero__row {
-    display: flex;
-    justify-content: center;
-}
-
-.description {
-    font-size: 14px;
-    line-height: 1.7em;
-}
-
-.cancel {
-    font-size: 14px;
-}
-
 .fa-arrow-down {
     margin-top: 80px;
     font-size: 40px;
-}
-
-
-
-.img-jumbo {
-    width: 680px;
-}
-
-.hero__row li {
-    margin-bottom: 30px;
-}
-
-.hero__row a {
-    text-decoration: none;
-    font-size: 14px;
 }
 
 /*Business content cards*/
