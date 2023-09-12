@@ -65,7 +65,8 @@ img {
 }
 
 .row > [class^="col"] {
-    padding: 0px 25px; /*aggiunto padding laterale ai figli diretti di row, per gestire i gutter fra le card.*/
+    /* padding: 0px 25px;  */
+    /*aggiunto padding laterale ai figli diretti di row, per gestire i gutter fra le card.*/
 }
 
 /* setup columns*/
@@ -89,7 +90,7 @@ img {
 /* header */
 
 .page-header {
-    padding: 20px 0px;
+    padding: 50px 0px;
     background-color: white;
 }
 
@@ -149,7 +150,7 @@ header li {
 .title-display {
     font-size: 76px;
     line-height: 1.2;
-    margin-bottom: 32px;
+    margin: 32px 0px;
 }
 
 .hero__content {
@@ -177,63 +178,40 @@ header li {
     font-size: 14px;
 }
 
-.business-card .container {
+/* layout plan cards*/
+
+.plan-cards {
+    padding-top: 50px;
+}
+
+.plan-cards .row {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    column-gap: 50px;
+    flex-wrap: nowrap;
 }
 
-.business__col-4 {
-    width: 300px;
-}
-
-.business-card .container {
-    margin-top: 50px;
-}
-
-.plan-name {
-    font-size: 14px;
+.card-header {
+    border-bottom: 1px solid gray;
     text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
 }
 
-.main-business-info {
-    padding: 20px;
+.card-body {
+    margin: 40px 20px;
 }
 
-.main-business-info li {
-    margin-bottom: 20px;
-}
-
-.main-business-info ul {
-    margin-top: 30px;
-}
-
-.plan-title {
-    font-size: 20px;
+.plan-data-list > li {
+    margin-bottom: 15px;
 }
 
 .price {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .duration {
-    font-size: 10px;
+    font-size: 12px;
     color: gray;
-}
-
-.user-description {
-    font-size: 14px;
-}
-
-.trial-button {
-    background-color: #0061FF;
-    color: white;
-    padding: 10px 15px;
-    width: 100%;
-    text-align: center;
-    font-size: 14px;
-    text-decoration: none;
-    margin: 15px 0p;
 }
 
 /* debug */
@@ -258,8 +236,7 @@ header li {
     /* background-color: white; */
 }
 
-.debug .business-card .business__col-4 {
-    /* background-color: bisque; */
-    padding: 20px;
-    border: 2px solid #f6f6f6;
+.plan-cards .col-4{
+    /* background-color: #ffd830; */
+    border: 2px solid black;
 }
