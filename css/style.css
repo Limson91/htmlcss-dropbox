@@ -10,11 +10,88 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --blue: #0061FF; /* creeazione variabile colore*/
+    --light-blue: #b4d0e7;
+    --dark: black;
+    --bordeaux: #61082b;
+    --dark-blue: #0d2481;
+    --green: #a2d39b;
+    --yellow: #ffd830;
+    --red: #ff1c1c;
+    --dark-red: #d5001f;
+    --light-gray: #f5f5f5;
+    --light: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
 ul, ol, menu {
     list-style: none;
 }
 
+figure > img {
+    display: block;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* setup containers and rows*/
+
+.container-lg {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row > [class^="col"] {
+    padding: 0px 25px; /*aggiunto padding laterale ai figli diretti di row, per gestire i gutter fra le card.*/
+}
+
+/* setup columns*/
+
+.col-12 {
+    width: 100%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-4 {
+    flex-basis: calc((100% / 12) * 4);
+}
+
+.col-8 {
+    flex-basis: calc((100% / 12) * 8);
+}
+
 /* header */
+
+.page-header {
+    padding: 20px 0px;
+    background-color: white;
+}
 
 header a {
     text-decoration: none;
@@ -23,16 +100,21 @@ header a {
     display: inline-block;
 }
 
+.page-header .row { /*layout row e item al suo interno*/
+    justify-content: space-between;
+    align-items: center;
+}
+
 header li {
     display: inline-block;
     margin-right: 30px;
     vertical-align: middle;
 }
 
-.nav-row {
+.nav-menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .header-logo {
@@ -47,16 +129,29 @@ header li {
     text-align: center;
 }
 
-.nav-container {
-    width: 100%;
-    margin: 0 auto;
-}
-
 /* main-hero */
 
 .container {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.hero {
+    background-color: var(--light-blue);
+    padding-top: 80px;
+}
+
+.title-display {
+    font-size: 76px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px; /*prova a vedere se funzia anche per la suddivisione delle card */
 }
 
 .col-12 {
@@ -96,13 +191,7 @@ header li {
     font-size: 40px;
 }
 
-.col-4 {
-    flex-basis: calc((100% / 12) * 4);
-}
 
-.col-8 {
-    flex-basis: calc((100% / 12) * 8);
-}
 
 .img-jumbo {
     width: 680px;
