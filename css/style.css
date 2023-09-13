@@ -292,6 +292,46 @@ header li {
     margin: 30px 15px;
 }
 
+/* partner section */
+
+.container-partner {
+    margin-top: 150px;
+    display: flex;
+} 
+
+.img-partner {
+    max-width: 100%;
+}
+
+.info-partner-list {
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.info-partner-list > li {
+    margin-bottom: 30px;
+}
+
+.partner-title {
+    font-size: 22px;
+}
+
+.partner-info {
+    font-size: 16px;
+    color: gray;
+}
+
+.partner-button {
+    background-color: white;
+    color: gray;
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    font: 18px;
+    padding: 0 16px;
+    border: 2px solid gray;
+}
+
 /* debug */
 
 .debug .page-header {
